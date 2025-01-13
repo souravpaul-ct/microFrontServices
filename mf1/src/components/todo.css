@@ -1,0 +1,122 @@
+.max-w-md {
+    max-width: 28rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-2xl {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #1f2937;
+  }
+  
+  .space-y-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #f9fafb;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .flex:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .space-x-3 {
+    margin-left: 0.75rem;
+  }
+  
+  input[type="checkbox"] {
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 2px solid #d1d5db;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  input[type="checkbox"]:checked {
+    background-color: #2563eb;
+    border-color: #2563eb;
+  }
+  
+  input[type="checkbox"]:focus {
+    outline: 2px solid #93c5fd;
+    outline-offset: 2px;
+  }
+  
+  .text-lg {
+    font-size: 1.125rem;
+    color: #374151;
+  }
+  
+  .line-through {
+    text-decoration: line-through;
+    color: #6b7280;
+  }
+  
+  /* Add some spacing at the bottom of the list */
+  .space-y-3 > div:last-child {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 640px) {
+    .max-w-md {
+      margin: 1rem;
+      padding: 1rem;
+    }
+  
+    .text-2xl {
+      font-size: 1.25rem;
+    }
+  
+    .text-lg {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Smooth transitions for all interactive elements */
+  * {
+    transition: all 0.2s ease-in-out;
+  }
+  
+  /* Add a subtle border to the container on hover */
+  .max-w-md:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Custom checkbox style */
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: white;
+    position: relative;
+  }
+  
+  input[type="checkbox"]:checked::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 0.875rem;
+  }
+  
+  /* Add a subtle animation for completing tasks */
+  .line-through {
+    transition: all 0.3s ease;
+    opacity: 0.7;
+  }

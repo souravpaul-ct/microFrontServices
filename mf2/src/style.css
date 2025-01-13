@@ -1,0 +1,71 @@
+.mf2 {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mf2 h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eee;
+  }
+  
+  /* Completed Tasks Section */
+  .mf2 h1:first-of-type {
+    color: #2ecc71;
+    border-bottom-color: #2ecc71;
+  }
+  
+  /* Pending Tasks Section */
+  .mf2 h1:last-of-type {
+    color: #e74c3c;
+    border-bottom-color: #e74c3c;
+    margin-top: 2rem;
+  }
+  
+  .mf2 p {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+  }
+  
+  /* Completed Tasks Number */
+  .mf2 p:first-of-type {
+    background-color: rgba(46, 204, 113, 0.1);
+    color: #2ecc71;
+  }
+  
+  /* Pending Tasks Number */
+  .mf2 p:last-of-type {
+    background-color: rgba(231, 76, 60, 0.1);
+    color: #e74c3c;
+  }
+  
+  .mf2 p:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .mf2 {
+      margin: 10px;
+      padding: 1rem;
+    }
+  
+    .mf2 h1 {
+      font-size: 1.25rem;
+    }
+  
+    .mf2 p {
+      font-size: 1.5rem;
+    }
+  }
